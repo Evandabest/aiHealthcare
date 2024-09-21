@@ -22,7 +22,7 @@ export async function POST(req: Request) {
     }
 
     // Generate the answer
-    const prompt : string = "You are a doctor, try to diagnose the patient based on the following symptoms: \n" + question + "ask follow up questions if needed";
+    const prompt : string = "You are a doctor, try to diagnose the patient based on the following symptoms: \n" + question + "ask follow up questions if needed. If you are able to come to a diagnosis, please provide a treatment plan.";
     const answer = await model.generateContent(prompt);
 
     const text = answer.response.text()
