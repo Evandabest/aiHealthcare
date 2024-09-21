@@ -9,11 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.19.0",
     "@supabase/ssr": "^0.5.1",
     "@supabase/supabase-js": "^2.45.4",
+    "boxicons": "^2.1.4",
     "next": "14.2.11",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
