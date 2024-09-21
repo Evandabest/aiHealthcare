@@ -74,13 +74,13 @@ const HomePage = () => {
                   remarkPlugins={[remarkGfm]} 
                   className="prose prose-sm max-w-none"
                   components={{
-                    a: ({node, ...props}) => <a {...props} className="text-blue-600 hover:underline" />,
-                    p: ({node, ...props}) => <p {...props} className="mb-2" />,
-                    ul: ({node, ...props}) => <ul {...props} className="list-disc list-inside mb-2" />,
-                    ol: ({node, ...props}) => <ol {...props} className="list-decimal list-inside mb-2" />,
-                    h1: ({node, ...props}) => <h1 {...props} className="text-xl font-bold mb-2" />,
-                    h2: ({node, ...props}) => <h2 {...props} className="text-lg font-bold mb-2" />,
-                    h3: ({node, ...props}) => <h3 {...props} className="text-base font-bold mb-2" />,
+                    a: ({...props}) => <a {...props} className="text-blue-600 hover:underline" />,
+                    p: ({...props}) => <p {...props} className="mb-2" />,
+                    ul: ({...props}) => <ul {...props} className="list-disc list-inside mb-2" />,
+                    ol: ({...props}) => <ol {...props} className="list-decimal list-inside mb-2" />,
+                    h1: ({...props}) => <h1 {...props} className="text-xl font-bold mb-2" />,
+                    h2: ({...props}) => <h2 {...props} className="text-lg font-bold mb-2" />,
+                    h3: ({...props}) => <h3 {...props} className="text-base font-bold mb-2" />,
                   }}
                 >
                   {message.text}
